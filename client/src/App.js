@@ -1,11 +1,20 @@
 import React from 'react';
-import Checkout from './components/Checkout/Checkout.js';
+import { CssBaseline, Container, Typography, Box } from '@mui/material';
+import Checkout from './components/Checkout/Checkout';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Payment Gateway</h1>
-      <Checkout />
+      <CssBaseline />
+      <Container maxWidth="sm">
+        <Box textAlign="center" py={5}>
+          <Typography variant="h4" component="h1" gutterBottom>
+            Payment Gateway
+          </Typography>
+          <Checkout />
+        </Box>
+      </Container>
     </div>
   );
 }
